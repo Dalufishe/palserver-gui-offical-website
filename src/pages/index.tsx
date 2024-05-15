@@ -21,12 +21,12 @@ export default function Home() {
   return (
     <Theme appearance="dark" style={{ background: "inherit" }}>
       <main className={`${inter.className}`}>
-        <Navbar />
-        <div className="mx-96 flex flex-col items-center">
-          <h1 className="text-5xl mt-24 w-[1040px] text-center">
+        {/* <Navbar /> */}
+        <div className="w-[90%] md:w-[60%] m-auto flex flex-col items-center">
+          <h1 className="text-5xl mt-24 mx-12 text-center">
             最簡單上手、功能強大的「幻獸帕魯」全圖形化伺服器架設工具
           </h1>
-          <h2 className="mt-12 text-text1 w-[1000px] text-center text-xl">
+          <h2 className="mt-12 text-text1 text-center text-xl">
             palserver GUI
             提供一鍵式啟動支援、全圖形化介面、零門檻架設專用伺服器。除此之外，palserver
             GUI
@@ -38,7 +38,8 @@ export default function Home() {
               查看完整功能
             </Button>
           </div>
-          <div className="w-[1000px] mt-16">
+          <img className="w-full mt-8" src={Preview1.src} />
+          {/* <div className="w-screen sm:w-[1000px] mt-16">
             <Swiper pagination={true} modules={[Pagination]}>
               <SwiperSlide>
                 <div className="mb-8">
@@ -52,7 +53,7 @@ export default function Home() {
                 <img src={Preview3.src} />
               </SwiperSlide>
             </Swiper>
-          </div>
+          </div> */}
           <Feature />
         </div>
       </main>

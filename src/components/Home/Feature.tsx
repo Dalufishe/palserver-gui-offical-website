@@ -47,7 +47,7 @@ export default function Feature() {
   };
 
   return (
-    <div className="w-[1120px] mt-16 mb-16 flex flex-wrap gap-8">
+    <div className=" mt-16 mb-16 flex flex-wrap gap-8">
       {_.map(features, (feature, key) => (
         <RadioCards.Root defaultValue="1">
           <RadioCards.Item value="4">
